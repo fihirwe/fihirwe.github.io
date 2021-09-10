@@ -35,7 +35,22 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .profile { margin-left: 1rem; width: 100%; }
 .profile .address { margin-bottom: 5px; margin-top: 5px; /*font-family: monospace;*/ color: gray; font-size: 1.2rem; }
 .profile .address p { display: inline-block; margin: 0; }
-
+@media (max-width: 575.98px) {
+  .HideOnMobile {
+    display: none;
+  }
+  .ShowOnMobile {
+    display: initial;
+  }
+}
+@media (min-width: 576px) {
+  .HideOnMobile {
+    display: initial;
+  }
+  .ShowOnMobile {
+    display: none;
+  }
+}
 @media (min-width: 576px) { .profile { width: 30%; }
   .profile .address p { display: block; } }
 .post-description { margin-bottom: 2rem; }
