@@ -141,3 +141,19 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 code { color: var(--global-theme-color); }
 
 html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 750ms !important; transition-delay: 0 !important; }
+
+.blink {
+  animation: blinkMe 1s linear infinite;
+  color: darkred;
+ }
+ @keyframes blinkMe {
+  0% {
+   opacity: 0;
+  }
+  50% {
+   opacity: 1;
+  }
+  100% {
+   opacity: 0;
+  }
+ }
